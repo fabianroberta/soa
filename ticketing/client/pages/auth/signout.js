@@ -1,9 +1,9 @@
 import Router from 'next/router';
 import { useEffect } from 'react';
-import UseRequest from '../../hooks/use-request';
+import useRequest from '../../hooks/use-request';
 
 const Signout = () => {
-  const { doRequest } = UseRequest({
+  const { doRequest } = useRequest({
     url: '/api/users/signout',
     method: 'post',
     body: {},
